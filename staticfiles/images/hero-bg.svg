@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1628"/>
+      <stop offset="1" stop-color="#132842"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e6a800" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e6a800" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#ffffff" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <pattern id="micro" width="16" height="16" patternUnits="userSpaceOnUse">
+      <path d="M16 0H0V16" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#g1)"/>
+  <rect width="1600" height="900" fill="url(#micro)"/>
+  <rect width="1600" height="900" fill="url(#grid)"/>
+
+  <!-- Industrial angled plates -->
+  <g opacity="0.65">
+    <path d="M-50 720 L620 520 L760 580 L40 860 Z" fill="#0a1628" opacity="0.55"/>
+    <path d="M820 40 L1680 0 L1680 260 L900 310 Z" fill="#0a1628" opacity="0.45"/>
+    <path d="M980 760 L1680 560 L1680 900 L980 900 Z" fill="#0a1628" opacity="0.45"/>
+  </g>
+
+  <!-- Accent sweep -->
+  <path d="M180 120 C540 10, 930 60, 1320 180 L1320 260 C920 120, 540 120, 180 220 Z" fill="url(#accent)"/>
+
+  <!-- Bus outline removed (background stays industrial/abstract) -->
+</svg>
+
