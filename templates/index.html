@@ -1,0 +1,349 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="PROFIT — запчасти и ремонтные комплектующие для автобусов Yutong и Iveco в Астане. Поставка для автопарков, транспортных компаний и сервисных центров (B2B)." />
+  <title>PROFIT — Запчасти для автобусов Yutong &amp; Iveco | Астана</title>
+
+  <!-- Main landing styles (separated from HTML) -->
+  <link rel="stylesheet" href="{% static 'css/landing.css' %}" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ========== Header ========== -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="PROFIT — на главную">
+        <!-- Логотип (можно заменить на ваш SVG/PNG). -->
+        <img class="brand__logo" src="{% static 'images/logo.jpg' %}" alt="PROFIT" />
+        <span class="brand__name">PRO<span>FIT</span></span>
+      </a>
+
+      <div class="header__actions">
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          ☰
+      </div>
+
+      <nav class="nav" id="main-nav" aria-label="Навигация по странице">
+        <a href="#home">Главная</a>
+        <a href="#products">Продукция</a>
+        <a href="#brands">Бренды</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ========== Hero ========== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <h1>Запчасти для автобусов<br><span>Iveco &amp; Yutong в Астане</span></h1>
+          <p>Надёжные детали для автопарков, быстрая доставка по Казахстану и профессиональная поддержка.</p>
+          <div class="hero__cta">
+            <a class="btn btn--accent" href="#contacts">Получить консультацию</a>
+            <a class="btn btn--outline" href="#products">Смотреть каталог</a>
+          </div>
+
+          <div class="hero__meta">
+            <div class="meta-card">
+              <strong>B2B-поставка</strong>
+              <span>Для транспортных компаний, парков и СТО</span>
+            </div>
+            <div class="meta-card">
+              <strong>Склад в Астане</strong>
+              <span>Ходовые позиции — в наличии</span>
+            </div>
+            <div class="meta-card">
+              <strong>Быстро</strong>
+              <span>Подбор и отгрузка в короткие сроки</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Правая иллюстрация убрана по запросу (оставляем только фон-картинку hero) -->
+      </div>
+    </section>
+
+    <!-- ========== Products / Categories ========== -->
+    <section class="section section--muted reveal" id="products" style="--d: 0ms;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Продукция и категории</h2>
+          <p>Поставляем запчасти и ремонтные комплектующие для автобусов — от ходовой части до электрики.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal" style="--d: 60ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="7" width="12" height="10"></rect>
+                <line x1="8" y1="5" x2="8" y2="7"></line>
+                <line x1="16" y1="5" x2="16" y2="7"></line>
+                <line x1="6" y1="17" x2="4" y2="17"></line>
+                <line x1="18" y1="17" x2="20" y2="17"></line>
+              </svg>
+            </div>
+            <h3>Двигатель</h3>
+            <p>Фильтры, ремни, прокладки, элементы системы охлаждения и обслуживания.</p>
+          </article>
+
+          <article class="card reveal" style="--d: 120ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <line x1="7" y1="6" x2="17" y2="18"></line>
+                <line x1="17" y1="6" x2="7" y2="18"></line>
+                <rect x="4" y="10" width="4" height="4"></rect>
+                <rect x="16" y="10" width="4" height="4"></rect>
+              </svg>
+            </div>
+            <h3>Подвеска и ходовая</h3>
+            <p>Сайлентблоки, рычаги, амортизаторы, элементы шасси и крепёж.</p>
+          </article>
+
+          <article class="card reveal" style="--d: 180ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="7"></circle>
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </div>
+            <h3>Тормозные системы</h3>
+            <p>Колодки, диски, суппорты, тормозные шланги и расходники.</p>
+          </article>
+
+          <article class="card reveal" style="--d: 240ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 2 L6 14 H12 L11 22 L18 10 H12 Z"></path>
+              </svg>
+            </div>
+            <h3>Электрика</h3>
+            <p>Датчики, проводка, освещение, генераторы и компоненты управления.</p>
+          </article>
+
+          <article class="card reveal" style="--d: 300ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="6" width="14" height="12"></rect>
+                <line x1="7" y1="9" x2="17" y2="9"></line>
+                <line x1="7" y1="12" x2="17" y2="12"></line>
+              </svg>
+            </div>
+            <h3>Кузовные детали</h3>
+            <p>Панели, зеркала, элементы дверей, внешний пластик и мелкие детали.</p>
+          </article>
+
+          <article class="card reveal" style="--d: 360ms;">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="8" width="16" height="10"></rect>
+                <line x1="7" y1="8" x2="7" y2="6"></line>
+                <line x1="12" y1="8" x2="12" y2="6"></line>
+                <line x1="17" y1="8" x2="17" y2="6"></line>
+              </svg>
+            </div>
+            <h3>Ремкомплекты</h3>
+            <p>Комплекты для обслуживания узлов и плановых ремонтов автопарка.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Brands ========== -->
+    <section class="section reveal" id="brands" style="--d: 0ms;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Бренды: Yutong и Iveco</h2>
+          <p>Специализация на самых распространённых моделях — быстрее подбираем и меньше ошибок в совместимости.</p>
+        </div>
+
+        <div class="brands">
+          <div class="brands__panel reveal" style="--d: 80ms;">
+            <h3 style="margin:0 0 0.75rem;">Опыт работы с парками</h3>
+            <p style="margin:0; color: var(--color-subtle);">Поддерживаем транспортные компании, сервисные центры и автобусные парки: от разовых позиций до регулярных поставок.</p>
+            <ul class="list" aria-label="Ключевые преимущества по брендам">
+              <li>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12 L10 17 L19 7"/></svg>
+                <span>Подбор по VIN/каталожным номерам и аналогам</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12 L10 17 L19 7"/></svg>
+                <span>Чёткие сроки поставки и информирование по заказу</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M5 12 L10 17 L19 7"/></svg>
+                <span>Позиции в наличии для оперативного ремонта</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="brands__panel reveal" style="--d: 160ms;">
+            <h3 style="margin:0 0 0.75rem;">Фокус на двух марках</h3>
+            <p style="margin:0 0 1rem; color: var(--color-subtle);">Это позволяет держать склад и экспертизу именно по тем узлам, которые чаще всего нужны в реальных условиях эксплуатации.</p>
+            <div class="brand-badge-row" aria-label="Бренды">
+              <div class="brand-badge">Yutong</div>
+              <div class="brand-badge">Iveco</div>
+              <div class="brand-badge">Оригинал <em>/</em> Аналоги</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Advantages ========== -->
+    <section class="section section--primary reveal" id="advantages" style="--d: 0ms;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Почему выбирают PROFIT</h2>
+          <p>Солидная поставка без лишнего шума — качество, скорость и ответственность за результат.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal" style="--d: 60ms;">
+            <h3>Оригинал и качественные аналоги</h3>
+            <p>Подберём оптимальный вариант по бюджету и ресурсу — без сомнительных производителей.</p>
+          </article>
+          <article class="card reveal" style="--d: 120ms;">
+            <h3>Быстрая доставка по Астане и Казахстану</h3>
+            <p>Помогаем минимизировать простой транспорта — в приоритете оперативность.</p>
+          </article>
+          <article class="card reveal" style="--d: 180ms;">
+            <h3>Конкурентные цены для B2B</h3>
+            <p>Понятные условия, предсказуемые поставки и прозрачные предложения.</p>
+          </article>
+          <article class="card reveal" style="--d: 240ms;">
+            <h3>Экспертная консультация</h3>
+            <p>Проверим совместимость, предложим аналоги, уточним спецификацию до заказа.</p>
+          </article>
+          <article class="card reveal" style="--d: 300ms;">
+            <h3>Ходовые позиции в наличии</h3>
+            <p>Часто востребованные запчасти держим на складе — чтобы ремонт не ждал.</p>
+          </article>
+          <article class="card reveal" style="--d: 360ms;">
+            <h3>Ориентация на сервис и результат</h3>
+            <p>Работаем так, чтобы вам было удобно: быстро, аккуратно, без лишней бюрократии.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA strip ========== -->
+    <section class="cta-strip reveal" aria-label="Быстрый призыв к действию" style="--d: 0ms;">
+      <div class="container cta-strip__inner">
+        <div>
+          <h2 style="margin:0 0 0.5rem;">Нужны запчасти для автопарка?</h2>
+          <p>Оставьте запрос — подберём позицию и подготовим коммерческое предложение.</p>
+        </div>
+        <a class="btn btn--accent" href="#contacts">Связаться</a>
+      </div>
+    </section>
+
+    <!-- ========== Contacts ========== -->
+    <section class="section reveal" id="contacts" style="--d: 0ms;">
+      <div class="container">
+        <div class="section-title">
+          <h2>Контакты</h2>
+          <p>Астана, Казахстан. Звоните или пишите в WhatsApp — отвечаем быстро.</p>
+        </div>
+
+        <div class="contacts">
+          <div class="contact-cards">
+            <div class="contact-card">
+              <strong>Адрес</strong>
+              <div>г. Астана, пр. Акжол, 51/2</div>
+            </div>
+            <div class="contact-card">
+              <strong>Телефон</strong>
+              <a href="tel:+77770000000">+7(705)516-51-77</a>
+              <a href="tel:+77770000000">+7(707)700-66-27</a>
+            </div>
+            <div class="contact-card">
+              <strong>WhatsApp</strong>
+              <a class="btn btn--wa" href="https://wa.me/77055165177" target="_blank" rel="noopener noreferrer">Написать в WhatsApp</a>
+            </div>
+            <div class="contact-card">
+              <strong>Режим работы</strong>
+              <div>Пн–Сб: 09:00–18:00</div>
+            </div>
+          </div>
+
+          <div class="map" role="region" aria-label="Карта (заглушка)">
+            <!-- Замените на iframe Google Maps при необходимости -->
+            <div class="map__hint">
+              <strong>Карта: Астана</strong>
+              <div>Вставьте сюда Google Maps iframe (вместо заглушки).</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">PRO<span>FIT</span></div>
+      <p class="footer__tagline">Bus Repair Parts Service</p>
+      <p class="footer__copy">© 2026 PROFIT. Все права защищены.</p>
+    </div>
+  </footer>
+
+<script>
+  // Minimal JS: reveal-on-scroll + header shadow + mobile navigation
+  (function () {
+    var header = document.querySelector('.header');
+    var nav = document.querySelector('#main-nav');
+    var toggle = document.querySelector('.menu-toggle');
+
+    // Header shadow on scroll
+    function onScroll() {
+      if (!header) return;
+      header.classList.toggle('is-scrolled', window.scrollY > 12);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Reveal sections/cards on scroll
+    var els = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            observer.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.14 });
+      els.forEach(function (el) { observer.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+    }
+
+    // Mobile menu toggle
+    if (toggle && nav) {
+      toggle.addEventListener('click', function () {
+        var open = nav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = open ? '✕' : '☰';
+      });
+
+      nav.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          nav.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+          toggle.textContent = '☰';
+        });
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
